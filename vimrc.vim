@@ -33,6 +33,7 @@ call plug#end()
 
 set background=dark
 set cursorline
+colorscheme gruvbox
 set notermguicolors
 
 syntax on
@@ -54,7 +55,6 @@ set laststatus=2
 set nobackup
 set nowb
 set noswapfile
-set number relativenumber
 set nu rnu
 set undodir=$HOME/.vim/undodir
 set undofile
