@@ -1,5 +1,5 @@
 set nocompatible             
-filetype off                  " required
+filetype off
 set encoding=UTF-8
 inoremap jj <ESC>
 
@@ -31,10 +31,9 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'gruvbox-community/gruvbox'
 call plug#end()
 
-colorscheme gruvbox
-set cursorline
 set background=dark
-set termguicolors
+set cursorline
+set notermguicolors
 
 syntax on
 autocmd! bufwritepost vimrc.vim source %
