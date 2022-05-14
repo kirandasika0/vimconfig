@@ -29,11 +29,13 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 " Themes
 Plug 'gruvbox-community/gruvbox'
+Plug 'tomasiser/vim-code-dark'
+
 call plug#end()
 
 set background=dark
 set cursorline
-colorscheme gruvbox
+colorscheme codedark
 set notermguicolors
 
 syntax on
