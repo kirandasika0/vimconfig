@@ -36,7 +36,6 @@ call plug#end()
 set background=dark
 set cursorline
 colorscheme codedark
-set notermguicolors
 
 syntax on
 autocmd! bufwritepost vimrc.vim source %
