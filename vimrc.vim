@@ -25,7 +25,7 @@ Plug 'fatih/vim-hclfmt'
 Plug 'Yggdroot/indentLine'
 
 " Autocompletion engine
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
 
 " Themes
 Plug 'gruvbox-community/gruvbox'
@@ -35,7 +35,7 @@ call plug#end()
 
 set background=dark
 set cursorline
-colorscheme codedark
+colorscheme gruvbox
 
 syntax on
 autocmd! bufwritepost vimrc.vim source %
