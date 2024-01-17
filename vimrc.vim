@@ -1,4 +1,4 @@
-set nocompatible             
+set nocompatible
 filetype off
 set encoding=UTF-8
 inoremap jj <ESC>
@@ -59,6 +59,8 @@ set noswapfile
 set nu rnu
 set undodir=$HOME/.vim/undodir
 set undofile
+set showcmd
+set guicursor=n-v-c-i:block
 
 " some todo stuff
 au BufRead,BufNewFile *.todo setfiletype todo
@@ -149,11 +151,11 @@ set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+"inoremap <silent><expr> <TAB>
+      "\ pumvisible() ? "\<C-n>" :
+      "\ <SID>check_back_space() ? "\<TAB>" :
+      "\ coc#refresh()
+"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -258,4 +260,4 @@ nmap <leader>gu :diffget //2<CR>
 nmap <leader>gs :G<CR>
 
 " Gruvbox theme settings
-let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_contrast_dark = 'hard'
